@@ -330,6 +330,81 @@
     .modal-card button{margin-top:18px;height:48px;border-radius:13px;border:0;background:#de4f6f;color:#fff;font-weight:900;width:100%;font-size:15px;cursor:pointer}
     .homebar{flex:none;height:24px;display:grid;place-items:end center;padding-bottom:8px}
     .homebar i{width:130px;height:5px;border-radius:8px;background:#1f1b18;opacity:.85}
+    /* ===== v500 폴리시드 3화면 ===== */
+    .screen-head{margin:4px 2px 18px}
+    .screen-head h2{font-size:21px;line-height:1.35;letter-spacing:-.03em;margin:0 0 9px;font-weight:900;color:#1f1b18}
+    .screen-head p{margin:0;font-size:12.5px;line-height:1.6;color:#80736c;font-weight:600}
+    .cust-row{display:flex;align-items:center;justify-content:space-between;margin:2px 2px 12px}
+    .cust-row b{font-size:13px;color:#2c2520}
+    .cust-row a{font-size:11.5px;color:#d8556e;font-weight:800;text-decoration:none}
+    /* A. 사진 업로드 */
+    .up-drop{border:1.5px dashed #f0c2cb;background:linear-gradient(180deg,#fffdfc,#fff7f5);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:26px 18px;margin-bottom:16px;cursor:pointer;transition:.15s}
+    .up-drop:active{transform:scale(.99);border-color:#ec8ea0}
+    .up-cloud{width:46px;height:46px;border-radius:50%;background:#fff0f3;color:#e0516e;display:grid;place-items:center;margin-bottom:12px;box-shadow:0 8px 18px rgba(222,79,111,.12)}
+    .up-cloud .ic{width:24px;height:24px}
+    .up-drop b{font-size:13px;color:#5c4b43;margin-bottom:6px}
+    .up-note{font-size:10.5px;color:#a99c95;font-weight:700}
+    .up-toggle-row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #f1e3dd;border-radius:14px;padding:13px 14px;margin-bottom:16px;box-shadow:0 6px 16px rgba(88,58,52,.04)}
+    .up-toggle-copy b{display:block;font-size:12.5px;color:#3a322e;margin-bottom:4px}
+    .up-toggle-copy span{display:block;font-size:10.5px;color:#9a8d86;font-weight:600;line-height:1.4}
+    .ui-toggle{flex:none;width:46px;height:27px;border:0;border-radius:999px;background:#e7dcd6;padding:3px;cursor:pointer;transition:.2s}
+    .ui-toggle::after{content:"";display:block;width:21px;height:21px;border-radius:50%;background:#fff;transform:translateX(0);transition:.2s;box-shadow:0 2px 5px rgba(87,50,47,.2)}
+    .ui-toggle.on{background:linear-gradient(135deg,#e96382,#db4465);box-shadow:0 7px 16px rgba(222,79,111,.22)}
+    .ui-toggle.on::after{transform:translateX(19px)}
+    .up-section{font-size:12.5px;color:#6f635d;font-weight:800;margin:0 2px 11px}
+    .up-section b{color:#d8556e}
+    .screen .photo-tile{height:128px;border-radius:14px;position:relative;border:2px solid transparent;box-shadow:0 6px 16px rgba(86,56,50,.05)}
+    .screen .photo-tile.selected{border-color:#e96382;box-shadow:0 8px 20px rgba(222,79,111,.18)}
+    .screen .photo-tile::after{display:none}
+    .thumb-x{position:absolute;right:7px;top:7px;width:22px;height:22px;border:0;border-radius:50%;background:rgba(255,255,255,.9);color:#4c4140;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+    .thumb-x .ic{width:13px;height:13px;stroke-width:2.4}
+    .thumb-tag{position:absolute;left:7px;bottom:7px;height:22px;padding:0 9px;border-radius:999px;background:rgba(31,26,26,.66);color:#fff;font-size:9.5px;font-weight:800;display:inline-flex;align-items:center;backdrop-filter:blur(6px)}
+    .thumb-tag.before{background:rgba(91,140,200,.88)}
+    .thumb-tag.after{background:linear-gradient(135deg,rgba(233,99,130,.92),rgba(219,68,101,.92))}
+    .screen .grid-add{display:flex;flex-direction:column;gap:4px;border:1.5px dashed #ecd0d5;background:#fff7f8!important;color:#d8556e;font-size:12px;font-weight:800}
+    .screen .grid-add span{font-size:11px}
+    /* B. 고객 연동 */
+    .cust-search{display:flex;align-items:center;gap:9px;height:48px;border:1px solid #eee1dc;border-radius:14px;background:#fff;padding:0 14px;margin-bottom:16px;box-shadow:0 6px 16px rgba(88,58,52,.04)}
+    .cust-search .ic{width:18px;height:18px;color:#b3a39c;flex:none}
+    .cust-search input{flex:1;border:0;outline:0;font-size:13px;background:transparent;color:#2c2520}
+    .cust-card{display:grid;grid-template-columns:46px 1fr 28px;align-items:center;gap:12px;border:1px solid #f1dfda;border-radius:15px;background:#fff;padding:11px 12px;margin-bottom:10px;cursor:pointer;box-shadow:0 6px 16px rgba(88,58,52,.035);transition:.15s}
+    .cust-card.selected{background:linear-gradient(90deg,#fff4f6,#fff);border-color:#f4ccd4}
+    .cust-card .cust-avatar{height:46px;width:46px;border:2px solid #fff;box-shadow:0 4px 10px rgba(74,43,39,.12)}
+    .cust-info h3{margin:0 0 3px;font-size:13.5px;font-weight:900;color:#241d1c}
+    .cust-info p{margin:0;font-size:11px;color:#8c7f79;font-weight:600}
+    .cust-pick{width:26px;height:26px;border-radius:50%;border:1px solid #eedfda;color:#c2b2ac;display:grid;place-items:center;justify-self:end}
+    .cust-pick .ic{width:14px;height:14px}
+    .cust-card.selected .cust-pick{border:0;background:linear-gradient(135deg,#e96382,#db4465);color:#fff;box-shadow:0 5px 12px rgba(222,79,111,.25)}
+    .linked-card{margin-top:16px;border:1px solid #f2d3d8;background:linear-gradient(180deg,#fff7f8,#fff);border-radius:18px;padding:15px;box-shadow:0 9px 22px rgba(222,79,111,.07)}
+    .linked-title{display:flex;align-items:center;gap:7px;color:#df5270;font-size:10.5px;font-weight:900;letter-spacing:.02em;margin-bottom:12px}
+    .linked-title .ic{width:15px;height:15px}
+    .linked-main{display:grid;grid-template-columns:52px 1fr;gap:13px;align-items:center}
+    .linked-main .cust-avatar{height:52px;width:52px;border-radius:14px;border:2px solid #fff;box-shadow:0 4px 10px rgba(74,43,39,.12)}
+    .linked-main b{font-size:13.5px;color:#241d1c}
+    .linked-main span{display:block;margin-top:4px;font-size:10.5px;color:#7e716b;font-weight:600;line-height:1.45}
+    .linked-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
+    .lk-btn{height:40px;border-radius:12px;border:1px solid #efe0db;background:#fff;font-size:12px;font-weight:800;color:#2a2221;cursor:pointer}
+    .lk-btn.pink{background:#fff1f4;border-color:#f4ccd4;color:#df5270}
+    /* C. 캡션 생성 */
+    .seg{height:42px;background:#fff1f4;border-radius:14px;padding:4px;display:grid;grid-template-columns:1fr 1fr;margin-bottom:16px}
+    .seg-btn{border:0;border-radius:11px;background:transparent;color:#b9888c;font-weight:900;font-size:12.5px;cursor:pointer}
+    .seg-btn.on{background:#fff;color:#df5270;box-shadow:0 4px 12px rgba(222,79,111,.12)}
+    .cap-card{border:1px solid #f0ded8;border-radius:18px;background:#fff;box-shadow:0 9px 22px rgba(86,56,50,.05);padding:13px;margin-bottom:16px}
+    .cap-photo{height:200px;border-radius:14px;background:var(--after) center/cover;position:relative;margin-bottom:13px}
+    .cap-pill{position:absolute;left:11px;top:11px;height:26px;padding:0 11px;border-radius:999px;background:rgba(255,255,255,.9);color:#322927;font-size:11px;font-weight:800;display:inline-flex;align-items:center;gap:5px;backdrop-filter:blur(7px)}
+    .cap-pill .ic{width:13px;height:13px;color:#df5270}
+    .cap-text{position:relative;background:#fff9f8;border:1px solid #f1dfda;border-radius:14px;padding:14px}
+    .cap-text p{margin:0 0 10px;font-size:13px;line-height:1.7;color:#3a322e;font-weight:500;letter-spacing:-.01em}
+    .cap-text p[contenteditable=true]{outline:0;background:#fffefb;border-radius:6px;box-shadow:0 0 0 2px #f4ccd4}
+    .cap-hash{font-size:11px;line-height:1.6;color:#5687c0;font-weight:700;padding-right:42px}
+    .cap-count{position:absolute;right:13px;bottom:11px;color:#b8aaa4;font-size:10px;font-weight:700}
+    .hash-chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+    .hash-chip{height:30px;border:0;border-radius:999px;background:#f7efec;color:#776965;font-size:11px;font-weight:800;padding:0 12px;cursor:pointer}
+    .hash-chip.on{background:#fff1f4;color:#df5270;box-shadow:inset 0 0 0 1px #f4ccd4}
+    .cap-tone{display:flex;gap:9px;margin-bottom:18px}
+    .cap-actions{display:grid;grid-template-columns:1fr 1.3fr;gap:10px}
+    .cap-redo{height:50px;border:1px solid #efe0db;border-radius:13px;background:#fff;color:#5f534d;font-size:13.5px;font-weight:800;cursor:pointer}
+    .cap-preview{height:50px;border:0;border-radius:13px;background:linear-gradient(135deg,#e96382,#db4465);color:#fff;font-size:14.5px;font-weight:900;cursor:pointer;box-shadow:0 12px 24px rgba(222,79,111,.26)}
   </style>
 </head>
 <body>
@@ -346,6 +421,7 @@
     <symbol id="ic-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
     <symbol id="ic-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
     <symbol id="ic-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
     <symbol id="ic-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
     <symbol id="ic-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
     <symbol id="ic-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
@@ -406,10 +482,17 @@
 
       <!-- 1 사진 업로드 -->
       <section class="screen" data-screen="upload">
-        <p class="hint">사진을 추가하고 역할을 선택해 주세요.</p>
+        <div class="up-drop" data-upload>
+          <span class="up-cloud"><svg class="ic"><use href="#ic-cloud-up"/></svg></span>
+          <b>사진을 드래그하거나 여기를 눌러 업로드</b>
+          <span class="up-note">JPG · PNG 최대 20MB · 여러 장 선택 가능</span>
+        </div>
+        <div class="up-toggle-row">
+          <div class="up-toggle-copy"><b>전/후 사진으로 만들기</b><span>사진 순서대로 전·후를 자동으로 표시해요.</span></div>
+          <button class="ui-toggle on" id="baToggle" type="button" role="switch" aria-checked="true" aria-label="전후 사진 모드"></button>
+        </div>
+        <div class="up-section">선택한 사진 <b id="selectedCount">4</b> / 10</div>
         <div class="upload-grid" id="uploadGrid"></div>
-        <div class="chosen-label">선택한 사진 <b id="selectedCount">4</b> / 10</div>
-        <div class="role-row"><button class="role" data-rolebtn="전">전</button><button class="role" data-rolebtn="후">후</button><button class="role ghost" data-rolebtn="홍보컷">홍보컷</button><button class="role ghost" data-rolebtn="제외">제외</button></div>
       </section>
 
       <!-- 2 편집 및 템플릿 -->
@@ -423,13 +506,21 @@
 
       <!-- 3 캡션 생성 -->
       <section class="screen" data-screen="caption">
-        <p class="hint">원하는 톤을 선택하면 맞춤 캡션을 제안해드려요.</p>
+        <div class="seg"><button class="seg-btn on" type="button" data-seg="rec">추천 캡션</button><button class="seg-btn" type="button" data-seg="write">직접 작성</button></div>
         <input class="service-input" id="serviceInput" value="레이어드컷, 손질 쉬운 자연스러운 볼륨" aria-label="시술 내역" />
-        <div class="chips"><button class="chip">감성적</button><button class="chip active">전문적</button><button class="chip">친근한</button></div>
-        <div class="caption-card active" id="captionCard"><span class="check"><svg class="ic"><use href="#ic-check"/></svg></span><h5 id="capTitle">레이어드컷으로<br>움직임과 볼륨감을 살려드렸어요.</h5><p id="capBody">자연스러운 층과 확실한 변화를 경험해보세요. 손질이 쉬워지는 라인으로 매일 다른 분위기를 만들 수 있어요.</p><div class="hashtags" id="capTags">#레이어드컷&nbsp;&nbsp;#아이디어&nbsp;&nbsp;#볼륨스타일</div></div>
-        <div class="caption-card"><h5>손질이 쉬워지는 레이어드컷</h5><p>결이 살아나 얼굴선이 더 가볍고 또렷해 보여요.</p><div class="hashtags">#레이어드컷맛집&nbsp;&nbsp;#헤어관리&nbsp;&nbsp;#인생머리</div></div>
-        <div class="caption-card"><h5>가벼운 레이어로 분위기 체인지!</h5><p>바쁠 때도 손쉽게 완성되는 데일리 스타일.</p><div class="hashtags">#헤어변신&nbsp;&nbsp;#레이어드컷&nbsp;&nbsp;#헤어멘토</div></div>
-        <button class="cta-sub" id="regenBtn">다시 생성</button>
+        <div class="cap-card" id="captionCard">
+          <div class="cap-photo" id="capPhoto"><span class="cap-pill"><svg class="ic"><use href="#ic-tag"/></svg><span id="capService">레이어드컷</span></span></div>
+          <div class="cap-text">
+            <p id="capBody">레이어드컷 시술로 움직임과 볼륨감을 살렸어요. 얼굴형과 모발 결을 함께 보며 레이어 시작점을 잡아, 손질이 쉬운 실루엣으로 정리했습니다.</p>
+            <div class="cap-hash" id="capTags">#레이어드컷 #뷰티샵콘텐츠 #전후사진</div>
+            <span class="cap-count"><span id="capCount">0</span>/200</span>
+          </div>
+        </div>
+        <div class="cust-row"><b>해시태그 제안</b><a>더보기 ›</a></div>
+        <div class="hash-chips" id="hashChips"><button class="hash-chip on" type="button">#레이어드컷</button><button class="hash-chip on" type="button">#뷰티샵콘텐츠</button><button class="hash-chip on" type="button">#전후사진</button><button class="hash-chip" type="button">#여신머리</button><button class="hash-chip" type="button">#헤어스타그램</button><button class="hash-chip" type="button">#오늘의헤어</button></div>
+        <div class="cust-row"><b>말투</b></div>
+        <div class="cap-tone"><button class="chip" type="button">감성적</button><button class="chip active" type="button">전문적</button><button class="chip" type="button">친근한</button></div>
+        <div class="cap-actions"><button class="cap-redo" id="regenBtn" type="button">문구 다시</button><button class="cap-preview" id="capPreviewBtn" type="button">미리보기</button></div>
       </section>
 
       <!-- 4 인스타 미리보기 -->
@@ -440,14 +531,18 @@
 
       <!-- 5 고객 연결 -->
       <section class="screen" data-screen="connect">
-        <input class="customer-search" id="customerSearch" placeholder="고객명, 전화번호, 태그로 검색해 주세요." />
-        <p class="cust-title">연결된 고객</p>
-        <div class="customer selected"><span class="cust-avatar c1"></span><div><h5>김유정</h5><p>010-1234-5678 · 최근 방문 3일 전</p></div><span class="remove"><svg class="ic" style="width:15px;height:15px"><use href="#ic-x"/></svg></span></div>
-        <p class="cust-title recent">최근 고객</p>
+        <div class="screen-head"><h2>고객을 선택하거나<br>새로 연결해 주세요</h2><p>연결하면 작업실에 자동 저장되고, 시술 기록이 함께 남아요.</p></div>
+        <div class="cust-search"><svg class="ic"><use href="#ic-search"/></svg><input id="customerSearch" placeholder="이름, 전화번호 검색" /></div>
+        <div class="cust-row"><b>최근 고객</b><a>더보기 ›</a></div>
         <div id="customerList">
-          <div class="customer" data-name="이서연"><span class="cust-avatar c2"></span><div><h5>이서연</h5><p>010-3456-7899 · 최근 방문 7일 전</p></div><span></span></div>
-          <div class="customer" data-name="박민지"><span class="cust-avatar c3"></span><div><h5>박민지</h5><p>010-4567-8900 · 최근 방문 15일 전</p></div><span></span></div>
-          <div class="customer" data-name="최지우"><span class="cust-avatar c2"></span><div><h5>최지우</h5><p>010-4567-8901 · 최근 방문 17일 전</p></div><span></span></div>
+          <div class="cust-card selected" data-name="김연수"><span class="cust-avatar c1"></span><div class="cust-info"><h3>김연수</h3><p>010-1234-5678 · 레이어드컷 18회</p></div><span class="cust-pick"><svg class="ic"><use href="#ic-check"/></svg></span></div>
+          <div class="cust-card" data-name="이서연"><span class="cust-avatar c2"></span><div class="cust-info"><h3>이서연</h3><p>010-3456-7899 · 클리닉 6회</p></div><span class="cust-pick"><svg class="ic"><use href="#ic-plus"/></svg></span></div>
+          <div class="cust-card" data-name="박민지"><span class="cust-avatar c3"></span><div class="cust-info"><h3>박민지</h3><p>010-4567-8900 · 컬러 3회</p></div><span class="cust-pick"><svg class="ic"><use href="#ic-plus"/></svg></span></div>
+        </div>
+        <div class="linked-card">
+          <div class="linked-title"><svg class="ic"><use href="#ic-heart"/></svg> 연결된 고객</div>
+          <div class="linked-main"><span class="cust-avatar c1"></span><div><b id="linkedName">김연수</b> 고객과 연결됨<span>오늘 촬영한 전/후 사진과 캡션을 이 고객 기록에 저장해요.</span></div></div>
+          <div class="linked-actions"><button class="lk-btn pink" id="newCustBtn" type="button">+ 새 고객 등록</button><button class="lk-btn" id="skipCustBtn" type="button">연결 없이 진행</button></div>
         </div>
       </section>
 
@@ -481,7 +576,6 @@
   const CTA = {
     upload:{label:'다음', to:'edit'},
     edit:{label:'저장하고 캡션 생성', to:'caption'},
-    caption:{label:'다음', to:'preview'},
     preview:{label:'고객 연결로 이동', to:'connect'},
     connect:{label:'작업실에 저장', to:'__save'}
   };
@@ -520,17 +614,22 @@
   }
   function renderGrid(){
     const grid=$('#uploadGrid'); grid.innerHTML='';
+    const baEl=$('#baToggle'); const ba = baEl ? baEl.classList.contains('on') : true;
     photos.slice(0,8).forEach((src,i)=>{
       const d=document.createElement('div');
       d.className='photo-tile'+(selected.has(i)?' selected':'');
-      d.dataset.role = i===0?'전':i===1?'후':'홍보';
       d.style.backgroundImage=`url(${src})`;
+      let tag='홍보컷', cls='';
+      if(ba && i===0){ tag='전 Before'; cls='before'; }
+      else if(ba && i===1){ tag='후 After'; cls='after'; }
+      d.innerHTML=`<button class="thumb-x" type="button" aria-label="삭제"><svg class="ic"><use href="#ic-x"/></svg></button><span class="thumb-tag ${cls}">${tag}</span>`;
       d.onclick=()=>{ selected.has(i)?selected.delete(i):selected.add(i); renderGrid(); renderChosen(); };
+      const x=d.querySelector('.thumb-x'); if(x) x.onclick=(e)=>{ e.stopPropagation(); selected.delete(i); renderGrid(); renderChosen(); };
       grid.appendChild(d);
     });
     const add=document.createElement('button');
     add.className='photo-tile grid-add'; add.type='button';
-    add.innerHTML='<svg class="ic"><use href="#ic-plus"/></svg>';
+    add.innerHTML='<svg class="ic"><use href="#ic-plus"/></svg><span>추가</span>';
     add.onclick=()=>fileInput.click();
     grid.appendChild(add);
   }
@@ -540,6 +639,7 @@
     if(arr[1]!==undefined){
       $('#afterPreview').style.backgroundImage=`url(${photos[arr[1]]})`;
       const ig=$('.ig-img'); if(ig) ig.style.backgroundImage=`url(${photos[arr[1]]})`;
+      const cp=$('#capPhoto'); if(cp) cp.style.backgroundImage=`url(${photos[arr[1]]})`;
       const ht=$('#clist .ccard .thumb'); if(ht) ht.style.backgroundImage=`url(${photos[arr[1]]})`;
     }
   }
@@ -593,17 +693,24 @@
     $$('.chip').forEach(c=>c.classList.remove('active')); ch.classList.add('active'); generateCaption(ch.textContent);
   }));
   function generateCaption(tone='전문적'){
-    const service=$('#serviceInput').value.trim() || '레이어드컷';
+    const raw=(($('#serviceInput')&&$('#serviceInput').value)||'').trim()||'레이어드컷';
+    const svcShort=raw.split(',')[0].trim();
     const pool={
-      '전문적':[`${service}으로\n움직임과 볼륨감을 살려드렸어요.`, '얼굴형과 모발 결을 함께 보며 레이어의 시작점을 잡아 손질이 쉬운 실루엣으로 정리했습니다.'],
-      '감성적':[`${service}, 오늘 분위기를 바꾸는 작은 차이`, '바람에 자연스럽게 흩어지는 결, 가볍지만 선명한 라인으로 더 부드러운 인상을 완성했어요.'],
-      '친근한':[`${service} 하고 나면 손질이 훨씬 쉬워져요`, '아침에 드라이 오래 하지 않아도 자연스럽게 볼륨이 살아나도록 가볍게 정리해드렸어요.']
+      '전문적':`${svcShort} 시술로 움직임과 볼륨감을 살렸어요. 얼굴형과 모발 결을 함께 보며 레이어 시작점을 잡아, 손질이 쉬운 실루엣으로 정리했습니다.`,
+      '감성적':`${svcShort}, 오늘 분위기를 바꾸는 작은 차이 ✨ 바람에 자연스럽게 흩어지는 결, 가볍지만 선명한 라인으로 더 부드러운 인상을 완성했어요.`,
+      '친근한':`${svcShort} 하고 나면 손질이 훨씬 쉬워져요 😊 아침에 드라이 오래 안 해도 자연스럽게 볼륨이 살아나도록 가볍게 정리해드렸어요.`
     };
-    const [title,body]=pool[tone]||pool['전문적'];
-    $('#capTitle').innerHTML=title.replace(/\n/g,'<br>'); $('#capBody').textContent=body;
-    $('#capTags').innerHTML='#레이어드컷&nbsp;&nbsp;#뷰티샵콘텐츠&nbsp;&nbsp;#전후사진&nbsp;&nbsp;#손질쉬운머리';
-    $('#igCaption').textContent=body;
-    $('#igTags').textContent='#레이어드컷 #뷰티샵콘텐츠 #전후사진 #손질쉬운머리';
+    const body=pool[tone]||pool['전문적'];
+    const bEl=$('#capBody'); if(bEl) bEl.textContent=body;
+    const sEl=$('#capService'); if(sEl) sEl.textContent=svcShort;
+    const cEl=$('#capCount'); if(cEl) cEl.textContent=String(body.length);
+    const ig=$('#igCaption'); if(ig) ig.textContent=body;
+    const igt=$('#igTags'); if(igt) igt.textContent=(($('#capTags')&&$('#capTags').textContent)||'#레이어드컷').trim();
+  }
+  function syncHashTags(){
+    const tags=$$('.hash-chip.on').map(x=>x.textContent.trim()).join(' ');
+    const el=$('#capTags'); if(el) el.textContent=tags||'#캡션';
+    const igt=$('#igTags'); if(igt) igt.textContent=tags||'#캡션';
   }
   $('#regenBtn').addEventListener('click',()=>{
     const tones=['전문적','감성적','친근한']; capIndex=(capIndex+1)%tones.length;
@@ -618,13 +725,32 @@
 
   $('#customerSearch').addEventListener('input',e=>{
     const q=e.target.value.trim();
-    $$('#customerList .customer').forEach(c=>c.style.display=(c.dataset.name.includes(q)||!q)?'grid':'none');
+    $$('#customerList .cust-card').forEach(c=>c.style.display=(c.dataset.name.includes(q)||!q)?'grid':'none');
   });
-  $$('#customerList .customer').forEach(c=>c.addEventListener('click',()=>{
-    $$('.customer').forEach(x=>x.classList.remove('selected')); c.classList.add('selected'); showToast(`${c.dataset.name} 고객과 연결했어요.`);
+  const _pickPlus='<svg class="ic"><use href="#ic-plus"/></svg>';
+  const _pickCheck='<svg class="ic"><use href="#ic-check"/></svg>';
+  $$('#customerList .cust-card').forEach(c=>c.addEventListener('click',()=>{
+    $$('#customerList .cust-card').forEach(x=>{ x.classList.remove('selected'); const p=x.querySelector('.cust-pick'); if(p) p.innerHTML=_pickPlus; });
+    c.classList.add('selected'); const p=c.querySelector('.cust-pick'); if(p) p.innerHTML=_pickCheck;
+    const ln=$('#linkedName'); if(ln) ln.textContent=c.dataset.name;
+    showToast(`${c.dataset.name} 고객과 연결했어요.`);
   }));
+  $('#newCustBtn') && $('#newCustBtn').addEventListener('click',()=>showToast('새 고객 등록 화면으로 이동해요.'));
+  $('#skipCustBtn') && $('#skipCustBtn').addEventListener('click',()=>{ createContentCard(photos[[...selected][1]||0],'레이어드컷 전후'); showToast('고객 연결 없이 작업실에 저장했어요.'); setScreen('home'); });
 
-  renderGrid(); renderChosen(); generateCaption(); updatePreviewFromUploads(); setScreen('home');
+  // 전/후 토글
+  $('#baToggle') && $('#baToggle').addEventListener('click',function(){ const on=this.classList.toggle('on'); this.setAttribute('aria-checked', on?'true':'false'); renderGrid(); });
+  // 캡션 세그 (추천/직접 작성)
+  $$('.seg-btn').forEach(b=>b.addEventListener('click',function(){
+    $$('.seg-btn').forEach(x=>x.classList.remove('on')); this.classList.add('on');
+    const body=$('#capBody'); if(body){ const write=this.dataset.seg==='write'; body.contentEditable=write?'true':'false'; if(write) body.focus(); }
+  }));
+  // 해시태그 칩
+  $$('.hash-chip').forEach(ch=>ch.addEventListener('click',function(){ this.classList.toggle('on'); syncHashTags(); }));
+  // 미리보기
+  $('#capPreviewBtn') && $('#capPreviewBtn').addEventListener('click',()=>{ updatePreviewFromUploads(); setScreen('preview'); });
+
+  renderGrid(); renderChosen(); syncHashTags(); generateCaption(); updatePreviewFromUploads(); setScreen('home');
 })();
 </script>
 </body>
