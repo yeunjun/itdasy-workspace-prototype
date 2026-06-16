@@ -405,6 +405,61 @@
     .cap-actions{display:grid;grid-template-columns:1fr 1.3fr;gap:10px}
     .cap-redo{height:50px;border:1px solid #efe0db;border-radius:13px;background:#fff;color:#5f534d;font-size:13.5px;font-weight:800;cursor:pointer}
     .cap-preview{height:50px;border:0;border-radius:13px;background:linear-gradient(135deg,#e96382,#db4465);color:#fff;font-size:14.5px;font-weight:900;cursor:pointer;box-shadow:0 12px 24px rgba(222,79,111,.26)}
+    /* ===== v510 편집·템플릿·미리보기 ===== */
+    .ed-photo{width:100%;height:300px;border-radius:16px;background:var(--after) center/cover;margin-bottom:13px;transition:filter .12s;box-shadow:0 8px 20px rgba(86,56,50,.06)}
+    .ed-panel{border:1px solid #f1e4df;border-radius:16px;background:#fff;box-shadow:0 8px 20px rgba(90,60,55,.04);overflow:hidden;margin-bottom:16px}
+    .ed-tabs{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid #f2e8e4}
+    .ed-tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;height:66px;color:#8c7b76;font-size:11.5px;font-weight:800;cursor:pointer;position:relative}
+    .ed-tab svg{width:22px;height:22px;fill:none;stroke:#8d7d78;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .ed-tab.on{color:#e0516e}
+    .ed-tab.on svg{stroke:#e0516e}
+    .ed-tab.on::after{content:"";position:absolute;left:8px;right:8px;bottom:0;height:2px;background:#e0516e}
+    .ed-tools{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;padding:15px 6px 4px}
+    .ed-tool{display:flex;flex-direction:column;align-items:center;gap:7px;color:#5e504c;font-size:10.5px;font-weight:700;cursor:pointer}
+    .ed-circle{width:44px;height:44px;border-radius:50%;border:1px solid #efe4e0;background:#fff;display:grid;place-items:center}
+    .ed-tool svg{width:22px;height:22px;fill:none;stroke:#746561;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+    .ed-tool.on .ed-circle{border-color:#e0516e;background:#fff0f1}
+    .ed-tool.on svg{stroke:#e0516e}
+    .ed-slider{display:grid;grid-template-columns:74px 1fr 44px;align-items:center;gap:14px;padding:15px 18px 18px;font-size:13.5px;font-weight:800;color:#3a2d2a}
+    .ed-slider input[type=range]{width:100%;accent-color:#e0516e}
+    .ed-val{font-size:18px;color:#342826;text-align:right}
+    .ed-bottom{display:grid;grid-template-columns:repeat(5,1fr);align-items:end;margin-bottom:24px}
+    .ed-bottom .eb{display:flex;flex-direction:column;align-items:center;gap:8px;color:#7f706b;font-size:11px;font-weight:800;cursor:pointer}
+    .ed-bottom .eb svg{width:23px;height:23px;fill:none;stroke:#71615d;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+    .ed-bottom .eb.disabled{color:#cfc5c1;cursor:default}
+    .ed-bottom .eb.disabled svg{stroke:#cfc5c1}
+    .ed-bottom .eb.active{color:#e0516e}
+    .ed-bottom .eb.active .activebox{width:58px;height:54px;border-radius:16px;background:#fff0f1;display:grid;place-items:center;margin-bottom:-2px}
+    .ed-bottom .eb.active svg{stroke:#e0516e}
+    .tpl-head{font-size:15px;font-weight:900;color:#241d1c;margin:2px 2px 12px;letter-spacing:-.02em}
+    .tpl-chips{display:flex;gap:8px;overflow-x:auto;margin-bottom:14px;padding-bottom:2px}
+    .tpl-chips::-webkit-scrollbar{height:0}
+    .tpl-chip{flex:none;height:34px;border:1px solid #eaded9;border-radius:18px;padding:0 15px;background:#fff;color:#7d6f6b;display:inline-flex;align-items:center;font-size:12.5px;font-weight:800;cursor:pointer}
+    .tpl-chip.on{background:linear-gradient(135deg,#e96382,#db4465);color:#fff;border-color:transparent;box-shadow:0 6px 12px rgba(222,79,111,.16)}
+    .tpl-grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .tpl-item{height:122px;border-radius:13px;background-size:cover;background-position:center;border:2px solid transparent;cursor:pointer;box-shadow:0 6px 14px rgba(86,56,50,.06)}
+    .tpl-item.on{border-color:#e0516e;box-shadow:0 8px 18px rgba(222,79,111,.2)}
+    .ig-notice{height:36px;border-radius:18px;background:#fff0ee;color:#8c6661;display:flex;align-items:center;justify-content:center;gap:7px;font-size:11.5px;font-weight:700;margin-bottom:14px}
+    .ig-info{width:15px;height:15px;border:1.4px solid #f09c9d;border-radius:50%;display:grid;place-items:center;color:#f09c9d;font-size:10px;font-weight:800;font-style:italic;flex:none}
+    .ig-card2{border:1px solid #f0e5e1;border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 6px 16px rgba(50,30,25,.05);margin-bottom:16px}
+    .ig-head2{height:58px;display:flex;align-items:center;padding:0 14px;gap:10px}
+    .ig-logo{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f7a5af,#e7808e);display:grid;place-items:center;color:#fff;font-family:Georgia,serif;font-size:8px;line-height:1.05;text-align:center;font-style:italic;flex:none}
+    .ig-name2{font-size:13px;font-weight:900;color:#171212}
+    .ig-loc{margin-left:auto;color:#9a8c87;font-size:12px;font-weight:600}
+    .ig-dots2{font-size:18px;font-weight:800;letter-spacing:2px;color:#222;margin-top:-6px}
+    .ig-photo{width:100%;height:330px;background:var(--after) center/cover;display:block}
+    .ig-act{height:46px;display:flex;align-items:center;padding:0 14px;color:#161212;position:relative}
+    .ig-ic{display:flex;gap:16px;align-items:center}
+    .ig-ic svg,.ig-save svg{width:24px;height:24px;fill:none;stroke:#111;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .ig-pager{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:6px}
+    .ig-pager .d{width:7px;height:7px;border-radius:50%;background:#d9cfcc}
+    .ig-pager .d.on{background:#e0516e}
+    .ig-save{margin-left:auto;display:inline-flex}
+    .ig-copy2{padding:4px 14px 15px;font-size:12.5px;line-height:1.6;color:#1d1716}
+    .ig-copy2 b{font-weight:900}
+    .ig-hash{color:#397ba9;font-weight:600}
+    .ig-ago{color:#9a8e89;font-size:11.5px;margin-top:6px}
+    .ig-preview-btn{width:100%;height:52px;border:1px solid #e99aaa;background:#fff7f8;color:#df4f6d;border-radius:14px;font-weight:900;font-size:14px;cursor:pointer}
   </style>
 </head>
 <body>
@@ -497,11 +552,42 @@
 
       <!-- 2 편집 및 템플릿 -->
       <section class="screen" data-screen="edit">
-        <div class="editor-compare"><div class="compare-side before"><span>Before</span></div><div class="compare-side after" id="afterPreview"><span>After</span></div></div>
-        <div class="template-tabs"><b>추천</b><span>감성 모던</span><span>미니멀</span><span>프레이밍</span><span>클린</span></div>
-        <div class="template-list"><div class="tmpl" data-name="Clean Beige"></div><div class="tmpl" data-name="Lash Anew"></div><div class="tmpl" data-name="Glow White"></div><div class="tmpl" data-name="Midnight Chic"></div></div>
-        <div class="tools"><div class="tool"><span class="ico"><svg class="ic"><use href="#ic-sparkles"/></svg></span><span>자동 보정</span></div><div class="tool"><span class="ico"><svg class="ic"><use href="#ic-sun"/></svg></span><span>톤</span></div><div class="tool"><span class="ico"><svg class="ic"><use href="#ic-contrast"/></svg></span><span>대비</span></div><div class="tool"><span class="ico"><svg class="ic"><use href="#ic-focus"/></svg></span><span>선명도</span></div><div class="tool"><span class="ico"><svg class="ic"><use href="#ic-crop"/></svg></span><span>세감</span></div></div>
-        <div class="slider-pop"><label>보정 강도 <span id="filterVal">62</span></label><input type="range" min="0" max="100" value="62" id="filterRange"></div>
+        <div class="ed-photo" id="edPhoto"></div>
+        <div class="ed-panel">
+          <div class="ed-tabs">
+            <div class="ed-tab on"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.9 4.9 7 7M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>기본</div>
+            <div class="ed-tab"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M5 12H2M22 12h-3"/><path d="M12 7a5 5 0 0 0-3.5 8.5c.8.8 1.1 1.4 1.2 2.5h4.6c.1-1.1.4-1.7 1.2-2.5A5 5 0 0 0 12 7z"/></svg>피부</div>
+            <div class="ed-tab"><svg viewBox="0 0 24 24"><path d="M8 20c5-2 8-6 8-13 0-2-2-4-4-4S8 5 8 7c0 7 3 11 8 13"/><path d="M9 13c2 1 4 1 6 0"/></svg>머릿결</div>
+            <div class="ed-tab"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="m4 16 4-4 4 3 3-4 5 6"/><circle cx="9" cy="9" r="1.5"/></svg>배경</div>
+            <div class="ed-tab"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>고급</div>
+          </div>
+          <div class="ed-tools">
+            <div class="ed-tool on"><span class="ed-circle"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span>밝기</div>
+            <div class="ed-tool"><span class="ed-circle"><svg viewBox="0 0 24 24"><path d="m13 2-7 12h6l-1 8 7-12h-6z"/></svg></span>선명도</div>
+            <div class="ed-tool"><span class="ed-circle"><svg viewBox="0 0 24 24"><circle cx="9" cy="11" r="4"/><circle cx="15" cy="11" r="4"/><circle cx="12" cy="16" r="4"/></svg></span>색감</div>
+            <div class="ed-tool"><span class="ed-circle"><svg viewBox="0 0 24 24"><path d="M12 3s7 7.2 7 12a7 7 0 0 1-14 0c0-4.8 7-12 7-12z"/></svg></span>윤기</div>
+            <div class="ed-tool"><span class="ed-circle"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18z"/><path d="M12 3a9 9 0 0 1 0 18"/></svg></span>대비</div>
+            <div class="ed-tool"><span class="ed-circle"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.2L21 12l-6.6 3.8L12 22l-2.4-6.2L3 12l6.6-3.8z"/></svg></span>채도</div>
+          </div>
+          <div class="ed-slider"><span>보정 강도</span><input type="range" min="0" max="100" value="60" id="filterRange" aria-label="보정 강도"><span class="ed-val" id="filterVal">+60</span></div>
+        </div>
+        <div class="ed-bottom">
+          <div class="eb"><svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-1"/></svg>되돌리기</div>
+          <div class="eb disabled"><svg viewBox="0 0 24 24"><path d="m15 14 5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h1"/></svg>다시실행</div>
+          <div class="eb active"><span class="activebox"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M12 5v14"/></svg></span>비교</div>
+          <div class="eb"><svg viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>원본보기</div>
+          <div class="eb"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>초기화</div>
+        </div>
+        <div class="tpl-head">템플릿 선택</div>
+        <div class="tpl-chips"><span class="tpl-chip on">전체</span><span class="tpl-chip">전후</span><span class="tpl-chip">시술 자랑</span><span class="tpl-chip">고객 후기</span><span class="tpl-chip">이벤트</span></div>
+        <div class="tpl-grid2">
+          <div class="tpl-item on" data-name="Clean Beige" style="background-image:var(--portrait)"></div>
+          <div class="tpl-item" data-name="Lash Anew" style="background-image:var(--nails)"></div>
+          <div class="tpl-item" data-name="Glow White" style="background-image:var(--product)"></div>
+          <div class="tpl-item" data-name="Event Soft" style="background-image:var(--event)"></div>
+          <div class="tpl-item" data-name="Salon Warm" style="background-image:var(--salon)"></div>
+          <div class="tpl-item" data-name="Before After" style="background-image:var(--hairBA)"></div>
+        </div>
       </section>
 
       <!-- 3 캡션 생성 -->
@@ -525,8 +611,22 @@
 
       <!-- 4 인스타 미리보기 -->
       <section class="screen" data-screen="preview">
-        <div class="insta-card"><div class="ig-head"><span class="ig-avatar"></span><span>your_salon_official</span><span style="margin-left:auto;display:inline-flex"><svg class="ic" style="width:20px;height:20px"><use href="#ic-more"/></svg></span></div><div class="ig-img"><div class="ba-labels"><span>Before</span><span>After</span></div></div><div class="ig-icons"><span><svg class="ic"><use href="#ic-heart"/></svg></span><span><svg class="ic"><use href="#ic-message"/></svg></span><span><svg class="ic"><use href="#ic-send"/></svg></span><span class="save"><svg class="ic"><use href="#ic-bookmark"/></svg></span></div><div class="ig-copy"><b>좋아요 <span id="likeCount">120</span>개</b><br><b>your_salon_official</b> <span id="igCaption">레이어드컷으로 자연스러우면서 확실한 볼륨감을 살려드렸어요.</span><br><span class="hashtags" id="igTags">#레이어드컷 #아이디어 #볼륨스타일</span><br><br><span style="color:#9c918b">1분 전</span></div></div>
-        <button class="preview-btn" id="previewBtn">피드 &amp; 스토리 미리보기</button>
+        <div class="ig-notice"><span class="ig-info">i</span>업로드 전, 실제 피드에서 보이는 모습을 확인해보세요.</div>
+        <div class="ig-card2">
+          <div class="ig-head2"><span class="ig-logo">Salon<br>Dearly</span><span class="ig-name2">Salon Dearly</span><span class="ig-loc">청담점</span><span class="ig-dots2">···</span></div>
+          <div class="ig-photo" id="igPhoto"></div>
+          <div class="ig-act">
+            <div class="ig-ic">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.4-9.2C1.2 8.2 3 5.4 6 5.1c1.8-.2 3.3.7 4.2 2.1.9-1.4 2.4-2.3 4.2-2.1 3 .3 4.8 3.1 3.4 6.7C19.5 16.4 12 21 12 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.2 8.2 0 0 1-8.3 8.1 8.6 8.6 0 0 1-3.3-.7L4 20l1.2-4.1A8 8 0 1 1 21 11.5z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M22 3 10.7 14.3"/><path d="m22 3-7 18-4.3-6.7L3 10z"/></svg>
+            </div>
+            <div class="ig-pager"><span class="d on"></span><span class="d"></span><span class="d"></span><span class="d"></span></div>
+            <div class="ig-save"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg></div>
+          </div>
+          <div class="ig-copy2"><b>salondearly_official</b> <span id="igCaption">레이어드컷 시술로 움직임과 볼륨감을 살렸어요.</span><br><span class="ig-hash" id="igTags">#레이어드컷 #뷰티샵콘텐츠 #전후사진</span><div class="ig-ago">1분 전</div></div>
+        </div>
+        <button class="ig-preview-btn" id="previewBtn">공유 전 미리보기</button>
       </section>
 
       <!-- 5 고객 연결 -->
@@ -635,13 +735,11 @@
   }
   function updatePreviewFromUploads(){
     const arr=[...selected];
-    if(arr[0]!==undefined) $('.compare-side.before').style.backgroundImage=`url(${photos[arr[0]]})`;
-    if(arr[1]!==undefined){
-      $('#afterPreview').style.backgroundImage=`url(${photos[arr[1]]})`;
-      const ig=$('.ig-img'); if(ig) ig.style.backgroundImage=`url(${photos[arr[1]]})`;
-      const cp=$('#capPhoto'); if(cp) cp.style.backgroundImage=`url(${photos[arr[1]]})`;
-      const ht=$('#clist .ccard .thumb'); if(ht) ht.style.backgroundImage=`url(${photos[arr[1]]})`;
-    }
+    const idx = arr[1]!==undefined ? arr[1] : arr[0];
+    if(idx===undefined) return;
+    const url=`url(${photos[idx]})`;
+    ['#edPhoto','#capPhoto','#igPhoto'].forEach(s=>{ const el=$(s); if(el) el.style.backgroundImage=url; });
+    const ht=$('#clist .ccard .thumb'); if(ht) ht.style.backgroundImage=url;
   }
   function createContentCard(src, title='새 업로드 콘텐츠'){
     const card=document.createElement('article'); card.className='ccard';
@@ -678,15 +776,18 @@
   }));
 
   const filterRange=$('#filterRange');
-  filterRange.addEventListener('input',()=>{
-    const v=Number(filterRange.value); $('#filterVal').textContent=v;
+  filterRange && filterRange.addEventListener('input',()=>{
+    const v=Number(filterRange.value); const fv=$('#filterVal'); if(fv) fv.textContent='+'+v;
     const b=1+(v-50)/250, c=1+(v-50)/220, sat=1+(v-50)/260;
-    $('#afterPreview').style.filter=`brightness(${b}) contrast(${c}) saturate(${sat})`;
+    const ph=$('#edPhoto'); if(ph) ph.style.filter=`brightness(${b}) contrast(${c}) saturate(${sat})`;
   });
-  $$('.tmpl').forEach(t=>t.addEventListener('click',()=>{
-    $$('.tmpl').forEach(x=>x.style.outline=''); t.style.outline='2px solid #e85d78';
-    showToast(`${t.dataset.name} 템플릿을 적용했어요.`);
-  }));
+  // 편집: 탭/툴/하단액션
+  $$('.ed-tab').forEach(t=>t.addEventListener('click',function(){ $$('.ed-tab').forEach(x=>x.classList.remove('on')); this.classList.add('on'); }));
+  $$('.ed-tool').forEach(t=>t.addEventListener('click',function(){ $$('.ed-tool').forEach(x=>x.classList.remove('on')); this.classList.add('on'); showToast(`${this.textContent.trim()} 조정`); }));
+  $$('.ed-bottom .eb').forEach(b=>b.addEventListener('click',function(){ if(this.classList.contains('disabled')) return; showToast(this.textContent.trim()); }));
+  // 템플릿: 칩/그리드
+  $$('.tpl-chip').forEach(c=>c.addEventListener('click',function(){ $$('.tpl-chip').forEach(x=>x.classList.remove('on')); this.classList.add('on'); }));
+  $$('.tpl-item').forEach(t=>t.addEventListener('click',function(){ $$('.tpl-item').forEach(x=>x.classList.remove('on')); this.classList.add('on'); showToast(`'${this.dataset.name}' 템플릿을 적용했어요.`); }));
 
   let capIndex=1;
   $$('.chip').forEach(ch=>ch.addEventListener('click',()=>{
